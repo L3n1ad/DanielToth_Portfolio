@@ -12,7 +12,8 @@ $color-grey-dark-1: #434B4A;
 $color-grey-dark-2: #363C3B;
 
 // FONT VARIABLES
-$font-primary: 'Archivo Narrow', sans-serif;
+// $font-primary: 'Archivo Narrow', sans-serif;
+$font-primary: 'Inconsolata', sans-serif;
 // $font-display: 'Josefin Sans', sans-serif;
 
 // MEDIA VARIABLES / RESPONSIVE BREAKPOINTS
@@ -46,5 +47,4 @@ body {
     font-family: $font-primary;
     color: $color-grey-dark-2;
     font-weight: 300;
-    line-height: 1.6;
 }

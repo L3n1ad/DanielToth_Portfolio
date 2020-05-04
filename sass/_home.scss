@@ -1,0 +1,115 @@
+.home {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-gap: 4rem;
+    align-items: center;
+    padding: 20rem 4rem;
+    background-color: $color-grey-dark-2;
+    height: 100vh;
+    color: #fff;
+
+    &__text {
+        grid-column: 1 / 2; 
+        font-size: 3rem;
+        font-weight: 300;
+        transition: all 1s;
+        letter-spacing: none;
+    }
+
+    &__img {
+        grid-column: 2 / -1;
+        justify-self: center;
+        
+        img {
+            height: 20rem;
+            border-radius: 50%;
+        }
+
+    }
+
+    &__next {
+        grid-column: 1 / -1;
+        margin: 0 30vw;
+        
+
+        &-icon{
+            fill: #fff;
+            height: 6rem;
+            
+        }
+
+        &-icon:hover {
+            fill: $color-primary;
+            transform: scale(1.5);
+            
+        }
+
+    }
+
+    &__line{
+        display: flex;
+        flex: 1;
+    }
+}
+
+.full__stack{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+}
+
+.full__stack::before,
+.full__stack::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+}
+
+.text__animated {
+    display: inline-block;
+    cursor: pointer;
+    animation:  none;
+}
+
+.text__animated:hover {
+    animation: stretching 1s linear both;
+    color: $color-primary;
+    
+}
+
+@keyframes stretching {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(2, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.5, 1);
+  }
+
+  50% {
+    transform: scale3d(2, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.about {
+    height: 100vh;
+    background-color: $color-primary;
+}
