@@ -14,3 +14,91 @@ body {
   color: #363C3B;
   font-weight: 300;
   line-height: 1.6; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434B4A; }
+  .navbar__logo {
+    padding: 1rem 2rem; }
+    .navbar__logo img {
+      height: 5rem;
+      border-radius: 50%; }
+  .navbar__items {
+    display: flex;
+    align-self: stretch; }
+    .navbar__items > * {
+      padding: 0 2rem;
+      cursor: pointer;
+      height: 100%; }
+  .navbar__item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 0 1rem; }
+  .navbar__item:hover,
+  .navbar__item:hover .navbar__link:link,
+  .navbar__item:hover .navbar__link:visited,
+  .navbar__item:hover .navbar__icon {
+    color: #434B4A;
+    fill: #434B4A;
+    background-color: #33A2A0; }
+  .navbar__link:link, .navbar__link:visited {
+    text-decoration: none;
+    color: #33A2A0;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; }
+    .navbar__link:link span, .navbar__link:visited span {
+      padding-left: 1rem; }
+  .navbar__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #33A2A0; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #434B4A; }
+  .navbar__logo {
+    padding: 1rem 2rem; }
+    .navbar__logo img {
+      height: 5rem;
+      border-radius: 50%; }
+  .navbar__items {
+    display: flex;
+    align-self: stretch; }
+    .navbar__items > * {
+      padding: 0 2rem;
+      cursor: pointer;
+      height: 100%; }
+  .navbar__item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 0 1rem; }
+  .navbar__item:hover,
+  .navbar__item:hover .navbar__link:link,
+  .navbar__item:hover .navbar__link:visited,
+  .navbar__item:hover .navbar__icon {
+    color: #434B4A;
+    fill: #434B4A;
+    background-color: #33A2A0; }
+  .navbar__link:link, .navbar__link:visited {
+    text-decoration: none;
+    color: #33A2A0;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; }
+    .navbar__link:link span, .navbar__link:visited span {
+      padding-left: 1rem; }
+  .navbar__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #33A2A0; }
