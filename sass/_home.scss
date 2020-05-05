@@ -70,46 +70,15 @@
 .text__animated {
     display: inline-block;
     cursor: pointer;
-    animation:  none;
 }
 
 .text__animated:hover {
     animation: stretching 1s linear both;
-    color: $color-primary;
-    
-}
-
-@keyframes stretching {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(2, 0.75, 1);
-  }
-
-  40% {
-    transform: scale3d(0.75, 1.5, 1);
-  }
-
-  50% {
-    transform: scale3d(2, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, .95, 1);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
+    color: $color-primary; 
 }
 
 .about {
     height: 100vh;
     background-color: $color-primary;
 }
+
