@@ -263,3 +263,35 @@ body {
     border: 3px solid #434B4A; }
     .about__img:not(:last-child) {
       transform: translateX(8rem); }
+
+.skills {
+  background-color: #434B4A;
+  padding: 6rem 3rem; }
+  .skills__header {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #E7EDED;
+    text-transform: uppercase; }
+  .skills__box {
+    background-color: #33A2A0;
+    margin: 2rem 3rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+    border-radius: .2rem;
+    transition: all .2s; }
+  .skills__box:hover {
+    transform: scale(1.03) translateY(-2rem);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.7); }
+  .skills__logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 10rem));
+    grid-gap: 4rem;
+    justify-content: center; }
+  .skills__logo {
+    height: 10rem;
+    width: auto; }
+    .skills__logo h4 {
+      text-align: center;
+      font-size: 1.6rem; }

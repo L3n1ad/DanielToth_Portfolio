@@ -1,0 +1,44 @@
+.skills{
+    background-color: $color-grey-dark-1;
+    padding: 6rem 3rem;
+
+    &__header{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: 200;
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+    }
+
+    &__box{
+        background-color: $color-primary;
+        margin: 2rem 3rem;
+        padding: 3rem 2rem;
+        box-shadow: 0 2rem 5rem rgba(#000, .2);
+        border-radius: .2rem;
+        transition: all .2s;
+    }
+
+    &__box:hover {
+        transform: scale(1.03) translateY(-2rem);
+        box-shadow: 0 2rem 5rem rgba(#000, .7);
+    }
+
+    &__logo-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min-content, 10rem));
+        grid-gap: 4rem;
+        justify-content: center;
+    }
+
+    &__logo {
+        height: 10rem;
+        width: auto;
+        
+        h4 {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+}
