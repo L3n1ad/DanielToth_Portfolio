@@ -1,70 +1,62 @@
 .home {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-gap: 4rem;
-    align-items: center;
     padding: 20rem 4rem;
     background-color: $color-grey-dark-2;
     height: 100vh;
     color: #fff;
 
-    &__text {
-        grid-column: 1 / 2; 
-        font-size: 3rem;
-        font-weight: 300;
-        transition: all 1s;
-        letter-spacing: none;
-    }
+    &__content{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-gap: 4rem;
+        align-items: center;
 
-    &__img {
-        grid-column: 2 / -1;
-        justify-self: center;
-        
-        img {
-            height: 20rem;
-            border-radius: 50%;
+        &__text {
+            grid-column: 1 / 2; 
+            font-size: 3rem;
+            font-weight: 300;
+            // transition: all 1s;
+            letter-spacing: none;
+
+            &-header {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+            }
+
+
+            &-underline{
+                display: grid;
+                grid-template-columns: 1fr max-content 1fr;
+                grid-column-gap: 1.5rem;
+                align-items: center;
+            }
+
+            &-underline::before,
+            &-underline::after {
+                content: "";
+                height: 1px;
+                display: block;
+                background-color: currentColor;
+            }
         }
 
-    }
-
-    &__next {
-        grid-column: 1 / -1;
-        margin: 0 30vw;
-        
-
-        &-icon{
-            fill: #fff;
-            height: 6rem;
+        &__img {
+            grid-column: 2 / -1;
+            justify-self: center;
             
-        }
+            img {
+                height: 20rem;
+                border-radius: 50%;
+            }
 
-        &-icon:hover {
-            fill: $color-primary;
-            transform: scale(1.5);
-            
         }
-
     }
+
+    
 
     &__line{
         display: flex;
         flex: 1;
     }
-}
-
-.full__stack{
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-column-gap: 1.5rem;
-    align-items: center;
-}
-
-.full__stack::before,
-.full__stack::after {
-    content: "";
-    height: 1px;
-    display: block;
-    background-color: currentColor;
 }
 
 .text__animated {
@@ -75,10 +67,5 @@
 .text__animated:hover {
     animation: stretching 1s linear both;
     color: $color-primary; 
-}
-
-.about {
-    height: 100vh;
-    background-color: $color-primary;
 }
 
