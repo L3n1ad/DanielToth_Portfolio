@@ -353,6 +353,39 @@
 
     </section>
 
+    <section class="contact">
+
+        <div class="contact__item">
+            <a 
+                href="https://github.com/L3n1ad" class="contact__item-link"
+                target="_blank">
+                <img class="skills__logo" src="img/github.svg" alt="GitHub logo">
+            </a>
+            <span class="contact__item-title">GitHub</span>
+        </div>
+
+        <div class="contact__item">
+            <a 
+                href="https://www.linkedin.com/in/danieltoth0910/ class="contact__item-link"
+                target="_blank">
+                <img class="skills__logo" src="img/linkedin.svg" alt="LinkedIn logo">
+            </a>
+            <span class="contact__item-title">LinkedIn</span>
+        </div>
+
+        <div class="contact__item">
+            <div 
+                class="contact__item-link tooltip"
+                onclick="copy_function()"
+                onmouseout="outFunc()">
+                <img class="skills__logo" src="img/mail.svg" alt="Email logo">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            </div>
+            <span class="contact__item-title">Email</span>
+        </div>
+
+    </section>
+
 
 
     <script>
@@ -367,6 +400,25 @@
                     elements[i].classList.add('animated')
                 })
             }
+
+        function copy_function() {
+            var value = "danieltoth0910@gmail.com";
+            var input_temp = document.createElement("input");
+            input_temp.value = value;
+            document.body.appendChild(input_temp);
+            input_temp.select();
+            document.execCommand("copy");
+            document.body.removeChild(input_temp);
+            
+
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copied: danieltoth0910@gmail.com";
+        };
+
+        function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy to clipboard";
+        }
     </script>
  
     
