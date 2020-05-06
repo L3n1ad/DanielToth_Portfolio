@@ -42,10 +42,14 @@ body {
     transform: scale(1.5); }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2rem 5rem white;
+  box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.2);
   z-index: 10;
   border-bottom: 1px solid #33A2A0;
   background-color: #434B4A; }
@@ -89,10 +93,14 @@ body {
     fill: #33A2A0; }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2rem 5rem white;
+  box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.2);
   z-index: 10;
   border-bottom: 1px solid #33A2A0;
   background-color: #434B4A; }
