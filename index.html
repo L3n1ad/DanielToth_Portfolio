@@ -58,7 +58,7 @@
             </div>
 
             <div class="navbar__item">
-                <a href="#" class="navbar__link">
+                <a href="#projects" class="navbar__link">
                     <svg class="navbar__icon">
                         <use xlink:href="img/sprite.svg#icon-eye"></use>
                     </svg>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="navbar__item">
-                <a href="#" class="navbar__link">
+                <a href="#contact" class="navbar__link">
                     <svg class="navbar__icon">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>
                     </svg>
@@ -145,6 +145,10 @@
 
     <section class="about" id="about">
 
+        <div class="header">
+            <h1>About</h1>
+        </div>
+
         <div class="about__content mb-hg">
             <div class="about__text">
                 <h1 class="about__text-header-1 mb-md">About Me</h1>
@@ -184,7 +188,7 @@
 
     <section class="skills" id="skills">
 
-        <div class="skills__header">
+        <div class="header">
             <h1>Skills</h1>
         </div>
 
@@ -316,72 +320,92 @@
             </div>
         </div>
         
-
+        <div class="next">
+            <a href="#projects">
+                <svg class="next-icon next-icon-light">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+            </a>
+        </div>
 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
 
-        <div class="projects__card">
-            <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
-            <h1 class="projects__card-header">HELLO HEADER</h1>
-            <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi officiis quas fuga repellat?</p>
-            <a href="#" class="projects__card-link">See project</a>
+
+        <div class="header">
+            <h1>Projects</h1>
         </div>
-
-        <div class="projects__card">
-            <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
-            <h1 class="projects__card-header">HELLO HEADER</h1>
-            <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi officiis quas fuga repellat?</p>
-            <a href="#" class="projects__card-link">See project</a>
-        </div>
-
-        <div class="projects__card">
-            <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
-            <h1 class="projects__card-header">HELLO HEADER</h1>
-            <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi officiis quas fuga repellat?</p>
-            <a href="#" class="projects__card-link">See project</a>
-        </div>
-
-        <div class="projects__card">
-            <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
-            <h1 class="projects__card-header">HELLO HEADER</h1>
-            <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi officiis quas fuga repellat?</p>
-            <a href="#" class="projects__card-link">See project</a>
-        </div>
-
-
-    </section>
-
-    <section class="contact">
-
-        <div class="contact__item">
-            <a 
-                href="https://github.com/L3n1ad" class="contact__item-link"
-                target="_blank">
-                <img class="skills__logo" src="img/github.svg" alt="GitHub logo">
-            </a>
-            <span class="contact__item-title">GitHub</span>
-        </div>
-
-        <div class="contact__item">
-            <a 
-                href="https://www.linkedin.com/in/danieltoth0910/ class="contact__item-link"
-                target="_blank">
-                <img class="skills__logo" src="img/linkedin.svg" alt="LinkedIn logo">
-            </a>
-            <span class="contact__item-title">LinkedIn</span>
-        </div>
-
-        <div class="contact__item">
-            <div 
-                class="contact__item-link tooltip"
-                onclick="copy_function()"
-                onmouseout="outFunc()">
-                <img class="skills__logo" src="img/mail.svg" alt="Email logo">
-                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        
+        <div class="projects__grid">
+            <div class="projects__card">
+                <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
+                <h1 class="projects__card-header">HELLO HEADER</h1>
+                <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet
+                    laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi
+                    officiis quas fuga repellat?</p>
+                <a href="#" class="projects__card-link">See project</a>
             </div>
-            <span class="contact__item-title">Email</span>
+            
+            <div class="projects__card">
+                <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
+                <h1 class="projects__card-header">HELLO HEADER</h1>
+                <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet
+                    laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi
+                    officiis quas fuga repellat?</p>
+                <a href="#" class="projects__card-link">See project</a>
+            </div>
+            
+            <div class="projects__card">
+                <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
+                <h1 class="projects__card-header">HELLO HEADER</h1>
+                <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet
+                    laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi
+                    officiis quas fuga repellat?</p>
+                <a href="#" class="projects__card-link">See project</a>
+            </div>
+            
+            <div class="projects__card">
+                <img src="img/logo.jpg" alt="Logo" class="projects__card-img">
+                <h1 class="projects__card-header">HELLO HEADER</h1>
+                <p class="projects__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias eveniet
+                    laudantium rem quidem corporis voluptatum quos. Eum, quae corporis explicabo minus quos molestiae vitae, commodi
+                    officiis quas fuga repellat?</p>
+                <a href="#" class="projects__card-link">See project</a>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="header header-contact">
+            <h1>Contacts</h1>
+        </div>
+
+        <div class="contact__container">
+            <div class="contact__item">
+                <a href="https://github.com/L3n1ad" class="contact__item-link" target="_blank">
+                    <img class="skills__logo" src="img/github.svg" alt="GitHub logo">
+                </a>
+                <span class="contact__item-title">GitHub</span>
+            </div>
+            
+            <div class="contact__item">
+                <a href="https://www.linkedin.com/in/danieltoth0910/ class=" contact__item-link" target="_blank">
+                    <img class="skills__logo" src="img/linkedin.svg" alt="LinkedIn logo">
+                </a>
+                <span class="contact__item-title">LinkedIn</span>
+            </div>
+            
+            <div class="contact__item">
+                <div class="contact__item-link tooltip" onclick="copy_function()" onmouseout="outFunc()">
+                    <img class="skills__logo" src="img/mail.svg" alt="Email logo">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                </div>
+                <span class="contact__item-title">Email</span>
+            </div>
         </div>
 
     </section>

@@ -1,8 +1,11 @@
 .contact {
-    display: flex;
-    justify-content: space-around;
-    padding: 6rem 4rem;
+    padding: 2rem 4rem;
     background-color: $color-grey-dark-1;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
 
     &__item{
         display: flex;

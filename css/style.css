@@ -41,6 +41,18 @@ body {
     fill: #434B4A;
     transform: scale(1.5); }
 
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 200;
+  color: #E7EDED;
+  text-transform: uppercase;
+  margin: 10rem; }
+  .header-contact {
+    margin: 2rem;
+    font-size: 2rem; }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -240,8 +252,7 @@ body {
 
 .about {
   background-color: #33A2A0;
-  padding: 5rem 0;
-  height: 100vh; }
+  padding: 5rem 0; }
   .about__content {
     margin: 2rem 2rem;
     padding: 2rem 3rem;
@@ -271,13 +282,6 @@ body {
 .skills {
   background-color: #434B4A;
   padding: 6rem 3rem; }
-  .skills__header {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: 200;
-    color: #E7EDED;
-    text-transform: uppercase; }
   .skills__box {
     background-color: #33A2A0;
     margin: 2rem 3rem;
@@ -305,21 +309,23 @@ body {
       font-size: 1.6rem; }
 
 .projects {
-  background-color: grey;
-  padding: 6rem 4rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
-  grid-gap: 5rem;
-  justify-content: center;
-  justify-items: center; }
+  background-color: #C2C9C9;
+  padding: 6rem 4rem; }
+  .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
+    grid-gap: 5rem;
+    justify-content: center;
+    justify-items: center; }
   .projects__card {
-    background-color: #E7EDED;
+    background-color: #9ca1a1;
     font-size: 1.6rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+    color: #E7EDED; }
     .projects__card-img {
       display: block;
       height: 25rem;
@@ -351,10 +357,11 @@ body {
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5); }
 
 .contact {
-  display: flex;
-  justify-content: space-around;
-  padding: 6rem 4rem;
+  padding: 2rem 4rem;
   background-color: #434B4A; }
+  .contact__container {
+    display: flex;
+    justify-content: space-around; }
   .contact__item {
     display: flex;
     flex-direction: column;
