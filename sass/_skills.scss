@@ -1,14 +1,19 @@
 .skills{
-    background-color: $color-grey-dark-1;
+    background: linear-gradient(to bottom, $color-grey-dark-1, $color-primary);
     padding: 6rem 3rem;
 
+    &__container{
+        margin-bottom: 10rem;
+    }
+
     &__box{
-        background-color: $color-primary;
+        background: linear-gradient(to bottom right, $color-primary, $color-grey-dark-1);
         margin: 2rem 3rem;
         padding: 3rem 2rem;
         box-shadow: 0 2rem 5rem rgba(#000, .2);
         border-radius: .2rem;
         transition: all .2s;
+        padding-right: auto;
 
         h1 {
             border-bottom: 1px solid $color-grey-dark-1;
