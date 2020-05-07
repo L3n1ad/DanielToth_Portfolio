@@ -7,30 +7,37 @@
 @keyframes stretching {
   from {
     transform: scale3d(1, 1, 1);
+    // color: #cdf5f7;
   }
 
   30% {
     transform: scale3d(2, 0.75, 1);
+    // color: #7decf1;
   }
 
   40% {
     transform: scale3d(0.75, 1.5, 1);
+    // color: #34eef8;
   }
 
   50% {
     transform: scale3d(2, 0.85, 1);
+    color: $color-primary-light;
   }
 
   65% {
     transform: scale3d(.95, 1.05, 1);
+    // color: #34eef8;
   }
 
   75% {
     transform: scale3d(1.05, .95, 1);
+    // color: #7decf1;
   }
 
   to {
     transform: scale3d(1, 1, 1);
+    // color: #cdf5f7;
   }
 }
 
