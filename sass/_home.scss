@@ -1,14 +1,14 @@
 .home {
-    padding: 20rem 4rem;
-    background-color: $color-grey-dark-2;
-    height: 100vh;
-    color: #fff;
+    padding: 33rem 4rem 10rem 4rem;
+    color: $color-grey-light-1;
+    background: linear-gradient(to bottom, $color-grey-dark-3, $color-primary);
 
     &__content{
         display: grid;
         grid-template-columns: 75% 25%;
         grid-gap: 4rem;
         align-items: center;
+        margin-bottom: 20rem;
 
         &__text {
             grid-column: 1 / 2; 
@@ -16,6 +16,7 @@
             font-weight: 300;
             // transition: all 1s;
             letter-spacing: none;
+             text-shadow: 1rem 1rem 3rem rgba(#000, .5);
 
             &-header {
             display: grid;
@@ -26,8 +27,11 @@
             &-underline{
                 display: grid;
                 grid-template-columns: 1fr max-content 1fr;
+                grid-template-rows: 1fr 1fr;
                 grid-column-gap: 1.5rem;
                 align-items: center;
+                text-shadow: 1rem 1rem 3rem rgba(#000, .3);
+
             }
 
             &-underline::before,
@@ -36,16 +40,22 @@
                 height: 1px;
                 display: block;
                 background-color: currentColor;
+                text-shadow: 0rem 1orem 3rem rgba(#000, 1);
             }
         }
 
         &__img {
             grid-column: 2 / -1;
             justify-self: center;
+            padding-right: 6rem;
+            
             
             img {
-                height: 20rem;
+                height: 30rem;
+                width: 30rem;
+                object-fit: cover;
                 border-radius: 50%;
+                box-shadow: 0 2rem 5rem rgba(#000, .3);
             }
 
         }
@@ -62,10 +72,14 @@
 .text__animated {
     display: inline-block;
     cursor: pointer;
+
+    &-header {
+        margin: 0px -0.8rem;
+    }
 }
 
 .text__animated:hover {
     animation: stretching 1s linear both;
-    color: $color-primary; 
+    color: $color-primary-light; 
 }
 
