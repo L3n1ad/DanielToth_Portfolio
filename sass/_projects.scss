@@ -8,6 +8,7 @@
         grid-gap: 5rem;
         justify-content: center;
         justify-items: center;
+        align-items: start;
         }
 
     &__card{
@@ -21,8 +22,8 @@
         color: $color-grey-light-1;
 
         &-img{
+            width: 100%;
             display: block;
-            height: 25rem;
             object-fit: cover;
         }
 

@@ -316,7 +316,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
     grid-gap: 5rem;
     justify-content: center;
-    justify-items: center; }
+    justify-items: center;
+    align-items: start; }
   .projects__card {
     background-color: #9ca1a1;
     font-size: 1.6rem;
@@ -327,8 +328,8 @@ body {
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
     color: #E7EDED; }
     .projects__card-img {
+      width: 100%;
       display: block;
-      height: 25rem;
       object-fit: cover; }
     .projects__card-header {
       margin: 2rem 2rem;
