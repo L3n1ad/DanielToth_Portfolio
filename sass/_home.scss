@@ -1,8 +1,8 @@
 .home {
     padding: 33rem 4rem 10rem 4rem;
     color: $color-grey-light-1;
-    background: linear-gradient(to bottom, $color-grey-dark-3, $color-primary);
-
+    // background: linear-gradient(to bottom, $color-grey-dark-3, $color-primary);
+    background: $color-background;
     &__content{
         display: grid;
         grid-template-columns: 75% 25%;
@@ -16,7 +16,6 @@
             font-weight: 300;
             // transition: all 1s;
             letter-spacing: none;
-             text-shadow: 1rem 1rem 3rem rgba(#000, .5);
 
             &-header {
             display: grid;
@@ -30,7 +29,8 @@
                 grid-template-rows: 1fr 1fr;
                 grid-column-gap: 1.5rem;
                 align-items: center;
-                text-shadow: 1rem 1rem 3rem rgba(#000, .3);
+    
+                color:$color-grey-light-1;
 
             }
 
@@ -80,6 +80,6 @@
 
 .text__animated:hover {
     animation: stretching 1s linear both;
-    color: $color-primary-light; 
+    color:  #3fe1fd;
 }
 
