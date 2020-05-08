@@ -1,32 +1,44 @@
 .about {
-    background: linear-gradient(to bottom, $color-primary, $color-grey-dark-1);
+    background: $color-background;
     padding: 5rem 0;
 
     &__content{
-        margin: 2rem 2rem;
+    //     margin: 2rem 2rem;
         padding: 2rem 3rem;
-        height: 70vh;
-        background: linear-gradient(to bottom, $color-grey-dark-1, $color-primary);
-        box-shadow: 0 2rem 5rem rgba(#000, .5);
-        border-radius: .3rem;
+    //     height: 70vh;
+    //    background: $color-background;
+    //     box-shadow: 0 2rem 5rem rgba(#000, .5);
+    //     border-radius: .3rem;
         display: grid;
-        grid-template-columns: minmax(60rem, 1fr) 1fr;
+        grid-template-columns: 1fr minmax(60rem, 1fr);
         align-items: center;
     }
 
     &__text {
+        text-align: justify;
         color: #fff;
-        grid-column: 1 / 1;
+        grid-column: 2 / -1;
         font-size: 1.6rem;
 
         &-header-1 {
+            text-align: end;
             margin-bottom: 2rem;
+        }
+
+        &-header-1::before,
+        &-underline::after {
+            content: "";
+            height: 1px;
+            display: block;
+            background-color: currentColor;
+            text-shadow: 0rem 1orem 3rem rgba(#000, 1);
         }
     }
 
     &__images {
-        grid-column: 2 / -1;
-        justify-self: end;
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+        justify-self: start;
     }
 
     &__img{
