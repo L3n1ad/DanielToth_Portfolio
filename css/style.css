@@ -80,13 +80,13 @@ body {
   .navbar__item {
     display: flex;
     align-items: center; }
-  .navbar__item:hover,
-  .navbar__item:hover .navbar__link:link,
-  .navbar__item:hover .navbar__link:visited,
-  .navbar__item:hover .navbar__icon {
-    color: #434B4A;
-    fill: #434B4A;
-    background-color: #33A2A0; }
+  .navbar__link:hover,
+  .navbar__link:hover .navbar__icon {
+    background-color: #33A2A0;
+    fill: #434B4A; }
+    .navbar__link:hover span,
+    .navbar__link:hover .navbar__icon span {
+      color: #434B4A; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
     color: #33A2A0;
@@ -129,13 +129,13 @@ body {
   .navbar__item {
     display: flex;
     align-items: center; }
-  .navbar__item:hover,
-  .navbar__item:hover .navbar__link:link,
-  .navbar__item:hover .navbar__link:visited,
-  .navbar__item:hover .navbar__icon {
-    color: #434B4A;
-    fill: #434B4A;
-    background-color: #33A2A0; }
+  .navbar__link:hover,
+  .navbar__link:hover .navbar__icon {
+    background-color: #33A2A0;
+    fill: #434B4A; }
+    .navbar__link:hover span,
+    .navbar__link:hover .navbar__icon span {
+      color: #434B4A; }
   .navbar__link:link, .navbar__link:visited {
     text-decoration: none;
     color: #33A2A0;

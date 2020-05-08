@@ -39,13 +39,14 @@
         align-items: center;
     }
 
-    &__item:hover,
-    &__item:hover &__link:link,
-    &__item:hover &__link:visited,
-    &__item:hover &__icon {
-        color: $color-grey-dark-1;
-        fill: $color-grey-dark-1;
+    &__link:hover ,
+    &__link:hover &__icon {
         background-color: $color-primary;
+        fill: $color-grey-dark-1;
+
+        span {
+            color: $color-grey-dark-1;
+        } 
     }
 
     &__link:link,
