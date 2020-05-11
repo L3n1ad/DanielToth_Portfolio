@@ -14,6 +14,9 @@ body {
   color: #E7EDED;
   font-weight: 300; }
 
+section {
+  padding-top: 20rem; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -309,7 +312,7 @@ body {
 
 .about {
   background: #0a142f;
-  padding: 5rem 0; }
+  padding: 20rem 3rem; }
   .about__content {
     padding: 2rem 3rem;
     display: grid;
@@ -342,7 +345,7 @@ body {
 
 .skills {
   background: #0a142f;
-  padding: 6rem 3rem;
+  padding: 18rem 3rem;
   display: grid;
   grid-template-columns: repeat(8, minmax(10rem, 1fr));
   grid-gap: 2rem 0; }
@@ -404,7 +407,7 @@ body {
 
 .projects {
   background: #0a142f;
-  padding: 6rem 4rem; }
+  padding: 18rem 3rem; }
   .projects__gallery {
     margin: 10rem 0;
     padding: 3rem 5rem;
