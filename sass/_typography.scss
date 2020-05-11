@@ -32,10 +32,9 @@
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    font-weight: 200;
-    color: $color-grey-light-1;
+    font-weight: 300 !important;
     text-transform: uppercase;
-    margin: 10rem;
+    // margin: 10rem;
 
     &-contact {
         margin: 2rem;
@@ -46,4 +45,64 @@
 .blue{
     color: #3fe1fd;
 }
+
+.text__animated {
+    display: inline-block;
+}
+
+.textline-both{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    color: $color-grey-light-1;
+}
+
+.textline-both::before,
+.textline-both::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    text-shadow: 0rem 1orem 3rem rgba(#000, 1);
+}
+
+.textline-left{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    color: $color-grey-light-1;
+}
+
+.textline-left::before {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    text-shadow: 0rem 1orem 3rem rgba(#000, 1);
+}
+
+.textline-right{
+    display: grid;
+    grid-template-columns: max-content 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    color: $color-grey-light-1;
+}
+
+.textline-right::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+    text-shadow: 0rem 1orem 3rem rgba(#000, 1);
+}
+
 
