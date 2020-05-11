@@ -509,8 +509,8 @@ section {
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5); }
 
 .contact {
-  padding: 2rem 4rem;
-  background-color: #434B4A; }
+  padding: 10rem 4rem;
+  background: linear-gradient(to bottom, #0a142f, #273d5a); }
   .contact__container {
     display: flex;
     justify-content: space-around; }
@@ -520,6 +520,9 @@ section {
     align-items: center; }
     .contact__item-link {
       cursor: pointer; }
+      .contact__item-link img {
+        height: 6rem;
+        width: 6rem; }
     .contact__item-title {
       color: #fff;
       font-size: 1.6rem;
