@@ -69,15 +69,6 @@
     }
 }
 
-.text__animated {
-    display: inline-block;
-    cursor: pointer;
-
-    &-header {
-        margin: 0px -0.8rem;
-    }
-}
-
 .text__animated:hover {
     animation: stretching 1s linear both;
     color:  #3fe1fd;
