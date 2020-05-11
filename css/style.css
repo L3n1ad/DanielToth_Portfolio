@@ -204,12 +204,12 @@ section {
     fill: #3fe1fd; }
 
 .home {
-  padding: 33rem 4rem 10rem 4rem;
+  padding: 30rem 6rem 10rem 6rem;
   color: #E7EDED;
   background: #0a142f; }
   .home__content {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 30%;
     grid-gap: 4rem;
     align-items: center;
     margin-bottom: 20rem; }
@@ -237,7 +237,7 @@ section {
     .home__content__img {
       grid-column: 2 / -1;
       justify-self: center;
-      padding-right: 6rem; }
+      margin-right: 8rem; }
       .home__content__img img {
         height: 30rem;
         width: 30rem;
