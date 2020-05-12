@@ -1,9 +1,9 @@
 .projects {
     background: $color-background;
-    padding: 18rem 3rem;
+    padding: 14rem 3rem 0 3rem;
 
     &__gallery{
-        margin: 10rem 0;
+        margin-top: 10rem;
         padding: 3rem 5rem;
         display: grid;
         grid-template-columns: repeat(auto-fit,30rem);

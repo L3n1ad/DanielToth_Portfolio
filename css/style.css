@@ -204,9 +204,10 @@ section {
     fill: #3fe1fd; }
 
 .home {
-  padding: 30rem 6rem 10rem 6rem;
+  padding: 30vh 5vw;
   color: #E7EDED;
-  background: #0a142f; }
+  background: #0a142f;
+  height: 100vh; }
   .home__content {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -312,7 +313,8 @@ section {
 
 .about {
   background: #0a142f;
-  padding: 20rem 3rem; }
+  padding: 20vh 1vw 10vh 1vw;
+  height: 90vh; }
   .about__content {
     padding: 2rem 3rem;
     display: grid;
@@ -345,7 +347,7 @@ section {
 
 .skills {
   background: #0a142f;
-  padding: 18rem 3rem;
+  padding: 13rem 3rem 0 3rem;
   display: grid;
   grid-template-columns: repeat(8, minmax(10rem, 1fr));
   grid-gap: 2rem 0; }
@@ -407,9 +409,9 @@ section {
 
 .projects {
   background: #0a142f;
-  padding: 18rem 3rem; }
+  padding: 14rem 3rem 0 3rem; }
   .projects__gallery {
-    margin: 10rem 0;
+    margin-top: 10rem;
     padding: 3rem 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);

@@ -1,8 +1,8 @@
 .home {
-    padding: 30rem 6rem 10rem 6rem;
+    padding: 30vh 5vw;
     color: $color-grey-light-1;
-    // background: linear-gradient(to bottom, $color-grey-dark-3, $color-primary);
     background: $color-background;
+    height: 100vh;
     &__content{
         display: grid;
         grid-template-columns: 70% 30%;
