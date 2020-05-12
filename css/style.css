@@ -253,9 +253,21 @@ section {
   animation: stretching 1s linear both;
   color: #3fe1fd; }
 
+.bounce {
+  -moz-animation: bounce .65s;
+  -webkit-animation: bounce .65s;
+  animation: bounce .65s; }
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(0, -1rem, 0);
+    box-shadow: 0 5rem 20rem rgba(0, 0, 0, 0.7); } }
+
 .animated {
-  -moz-animation: bounce 1s;
-  -webkit-animation: bounce 1s;
+  -moz-animation: stretching 1s;
+  -webkit-animation: stretching 1s;
   animation: stretching 1s; }
 
 @keyframes stretching {
@@ -420,6 +432,18 @@ section {
     .projects__gallery__item {
       position: relative;
       height: 30rem; }
+      .projects__gallery__item-1 {
+        order: -12; }
+      .projects__gallery__item-2 {
+        order: -11; }
+      .projects__gallery__item-3 {
+        order: -10; }
+      .projects__gallery__item-4 {
+        order: -9; }
+      .projects__gallery__item-5 {
+        order: -8; }
+      .projects__gallery__item-6 {
+        order: -7; }
       .projects__gallery__item-img {
         width: 100%;
         height: 100%;
@@ -478,10 +502,14 @@ section {
     flex-direction: column;
     align-items: center; }
     .contact__item-link {
-      cursor: pointer; }
+      cursor: pointer;
+      display: inline-block; }
       .contact__item-link img {
         height: 6rem;
-        width: 6rem; }
+        width: 6rem;
+        fill: #000; }
+    .contact__item-link:hover {
+      animation: bounce .65s alternate infinite; }
     .contact__item-title {
       color: #fff;
       font-size: 1.6rem;

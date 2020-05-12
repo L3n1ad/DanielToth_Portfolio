@@ -17,6 +17,30 @@
         &__item{
             position: relative;
             height: 30rem;
+
+            &-1{
+                order: -12 ;
+            }
+
+            &-2 {
+                order: -11;
+            }
+
+            &-3 {
+                order: -10;
+            }
+
+            &-4 {
+                order: -9;
+            }
+
+            &-5 {
+                order: -8;
+            }
+
+            &-6 {
+                order: -7;
+            }
             
             
 
