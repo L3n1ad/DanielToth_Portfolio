@@ -415,6 +415,7 @@ section {
     grid-template-columns: repeat(auto-fit, 30rem);
     justify-content: center;
     justify-items: center;
+    grid-gap: .5rem;
     padding: 1.5rem; }
     .projects__gallery__item {
       position: relative;
@@ -457,11 +458,11 @@ section {
           transform: translateY(-3px);
           font-weight: 500; }
     .projects__gallery__item:hover .projects__gallery__item-img {
-      opacity: .3; }
+      opacity: .2; }
     .projects__gallery__item:hover .projects__gallery__item-overlay {
-      background-color: rgba(10, 20, 47, 0.6);
+      background: linear-gradient(to bottom right, #3fe1fd, #dc4eff);
       color: white;
-      opacity: 1; }
+      opacity: .7; }
   .projects__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));

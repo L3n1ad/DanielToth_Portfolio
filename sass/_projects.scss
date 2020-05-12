@@ -10,13 +10,14 @@
         // grid-template-rows: repeat(auto-fill, minmax(25rem, 30rem));
         justify-content: center;
         justify-items: center;
-
+        grid-gap: .5rem;
 
         padding: 1.5rem;
 
         &__item{
             position: relative;
             height: 30rem;
+            
             
 
             &-img{
@@ -81,13 +82,13 @@
         }
 
         &__item:hover &__item-img {
-            opacity: .3;
+            opacity: .2;
         }
 
         &__item:hover &__item-overlay {
-            background-color: rgba($color-background, .6);
+            background: linear-gradient(to bottom right, $color-primary, $color-secondary);
             color: white;
-            opacity: 1;
+            opacity: .7;
         }
     }
 
