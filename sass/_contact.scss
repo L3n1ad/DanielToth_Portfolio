@@ -20,11 +20,17 @@
 
         &-link{
             cursor: pointer;
+            display: inline-block;
 
             img {
                 height: 6rem;
                 width: 6rem;
+                fill: #000;
             }
+        }
+
+        &-link:hover {
+          animation: bounce .65s alternate infinite;
         }
 
         &-title{
