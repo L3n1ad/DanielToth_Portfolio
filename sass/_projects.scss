@@ -39,14 +39,16 @@
                 height: 100%;
                 padding: 30% 1rem;
                 transition: all .7s;
+                background: $color-background;
+                
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
 
                 &-text{
-                    color: white;
                     font-size: 1.4rem;
+                    font-weight: 600;
                     margin-top: 3rem;
                 }
 
@@ -60,13 +62,16 @@
                     padding: 1.5rem;
                     margin: 2rem 7rem;
                     transition: all .2s;
+                    font-weight: 600;
+                    background-color: $color-secondary;
+                    border-radius: .5rem;
                 }
 
                 &-link:hover,
                 &-link:active {
-                    background-color: rgba($color-primary, .5);
+                    background: $color-primary;
                     transform: translateY(-3px);
-                    font-weight: 500;
+                   color: $color-grey-dark-1;
                 }
             }
 
@@ -86,69 +91,9 @@
         }
 
         &__item:hover &__item-overlay {
-            background: linear-gradient(to bottom right, $color-primary, $color-secondary);
+            // background: linear-gradient(to bottom right, $color-primary, $color-secondary);
             color: white;
             opacity: .7;
         }
-    }
-
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
-        grid-gap: 5rem;
-        justify-content: center;
-        justify-items: center;
-        align-items: start;
-        }
-
-    &__card{
-        background: $color-background-light;
-        font-size: 1.6rem;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        border-radius: .5rem;
-        box-shadow: 0 2rem 5rem rgba(#000, .3);
-        color: $color-grey-light-1;
-
-        &-img{
-            width: 100%;
-            display: block;
-            object-fit: cover;
-        }
-
-        &-header{
-            margin: 2rem 2rem;
-            font-size: 1.8rem;
-            font-weight: 500;
-            text-align: center;
-        }
-
-        &-text{
-            padding: 2rem 2rem;
-            font-size: 1.6rem;
-            font-weight: 300;
-            line-height: 1.2;
-            text-align: center;
-        }
-
-        &-link {
-            align-self: center;
-            margin: 2rem 0;
-            transition: all .2s;
-            text-decoration: none;
-            padding: 1rem;
-            color: $color-background;
-            background: $color-primary;
-            border-bottom: 1px solid $color-primary;
-            border-radius: .5rem;
-            box-shadow: 0 2rem 5rem rgba(#000, .1);
-        }
-
-        &-link:hover {
-            transform: scale(1.03) translateY(-.5rem);
-            box-shadow: 0 2rem 5rem rgba(#000, .5);
-        }
-
     }
 }
