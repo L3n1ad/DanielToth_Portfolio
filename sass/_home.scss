@@ -4,12 +4,12 @@
     background: $color-background;
     height: 100vh;
 
-    @include respond(1200) {
-        padding: 45vh 10vw;
-    }
-
     @include respond(900) {
         padding: 40vh 10vw;
+    }
+
+    @include respond(600) {
+        padding: 30vh 5vw;
     }
 
     &__content{
@@ -45,7 +45,7 @@
             }
 
             @include respond(900) {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
              @include respond(600) {
@@ -59,10 +59,6 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
                 margin-bottom: 2rem;
- 
-                @include respond(900) {
-                    // margin-bottom: -2rem;
-                }
                 
             }
 
@@ -118,8 +114,8 @@
                 }
 
                 @include respond(900) {
-                    height: 15rem;
-                    width: 15rem;
+                    height: 18rem;
+                    width: 18rem;
                 }
 
                 @include respond(600) {
