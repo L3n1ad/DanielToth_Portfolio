@@ -34,19 +34,29 @@ DOES INCLUDE _mixins
 
 // its important to use a relative measurments such as em
 // only screen means media queries will apply only for screens not to anything else such as print etc.
-    @if  $breakpoint == phone {
-        @media only screen and  (max-width: 37.5em) {@content}; // 600px
+    @if  $breakpoint == 400 {
+        @media only screen and  (max-width: 25em) {@content};
+        // 400px
     }
 
-    @if  $breakpoint == tab-port {
+    @if  $breakpoint == 600 {
+        @media only screen and  (max-width: 37.5em) {@content}; 
+        // 600px
+    }
+
+    @if  $breakpoint == 900 {
         @media only screen and  (max-width: 56.25em) {@content}; // 900px
     }
 
-    @if  $breakpoint == tab-land {
+    @if  $breakpoint == 1050 {
+        @media only screen and  (max-width: 65.625em) {@content}; // 1050
+    }
+
+    @if  $breakpoint == 1200 {
         @media only screen and  (max-width: 75em) {@content}; // 1200px
     }
 
-    @if  $breakpoint == big-desktop {
+    @if  $breakpoint == 1400 {
         @media only screen and  (min-width: 87.5em) {@content}; // 1400px
     }
 }

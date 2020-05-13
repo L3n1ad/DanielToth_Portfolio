@@ -44,6 +44,18 @@ $bp-small: 37.5em; // 600px/16px
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1 rem = 10px --> 10px/16px= 62.5%
+   
+    @include respond(1200) {
+        font-size: 56.25%;
+    }
+
+    @include respond(900) {
+        font-size: 50%;
+    }
+
+    @include respond(1400) {
+        font-size: 75%;
+    }
 }
 
 body {
@@ -51,7 +63,7 @@ body {
     color: $color-grey-light-1;
     font-weight: 300;
 
-    @include respond(big-desktop) {
+    @include respond(1400) {
         max-width: 140rem;
         margin: 0 auto;
         background: $color-background;

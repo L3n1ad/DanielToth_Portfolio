@@ -3,12 +3,31 @@
     color: $color-grey-light-1;
     background: $color-background;
     height: 100vh;
+
+    @include respond(1200) {
+        padding: 45vh 10vw;
+    }
+
+    @include respond(900) {
+        padding: 40vh 10vw;
+    }
+
     &__content{
         display: grid;
         grid-template-columns: 70% 30%;
+        grid-auto-rows: 1fr;
         grid-gap: 4rem;
         align-items: center;
         margin-bottom: 20rem;
+
+        @include respond(1200) {
+            grid-template-columns:55% 55%;
+        }
+
+        @include respond(600) {
+            grid-template-columns: 1fr;
+            grid-template-rows:1fr 1fr;
+        }
 
         &__text {
             grid-column: 1 / 2; 
@@ -17,9 +36,34 @@
             // transition: all 1s;
             letter-spacing: none;
 
+            @include respond(1200) {
+                font-size: 2.5rem;
+            }
+
+            @include respond(1050) {
+                font-size: 2rem;
+            }
+
+            @include respond(900) {
+                font-size: 1.5rem;
+            }
+
+             @include respond(600) {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                justify-self: center;
+                font-size: 1.3rem;
+             }
+
             &-header {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+                margin-bottom: 2rem;
+ 
+                @include respond(900) {
+                    // margin-bottom: -2rem;
+                }
+                
             }
 
 
@@ -40,7 +84,7 @@
                 height: 1px;
                 display: block;
                 background-color: currentColor;
-                text-shadow: 0rem 1orem 3rem rgba(#000, 1);
+                text-shadow: 0rem 1rem 3rem rgba(#000, 1);
             }
         }
 
@@ -48,6 +92,12 @@
             grid-column: 2 / -1;
             justify-self: center;
             margin-right: 8rem;
+
+            @include respond(600) {
+                grid-row: 2 / -1;
+                grid-column: 1 / 2;
+                margin-right: 0;
+            }
             
             
             img {
@@ -56,6 +106,26 @@
                 object-fit: cover;
                 border-radius: 50%;
                 box-shadow: 0 2rem 5rem rgba(#000, .3);
+
+                @include respond(1200) {
+                    height: 25rem;
+                    width: 25rem;
+                }
+
+                @include respond(1050) {
+                    height: 20rem;
+                    width: 20rem;
+                }
+
+                @include respond(900) {
+                    height: 15rem;
+                    width: 15rem;
+                }
+
+                @include respond(600) {
+                    height: 20rem;
+                    width: 20rem;
+                }
             }
 
         }

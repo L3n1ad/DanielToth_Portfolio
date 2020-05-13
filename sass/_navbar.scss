@@ -18,6 +18,16 @@
         text-align: center;
         cursor: pointer;
         transition: all 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+        @include respond(400) {
+            height: 4rem;
+            width: 4rem;
+        }
+
+        @include respond(600) {
+            height: 5rem;
+            width: 5rem;
+        }
     }
 
     &__nav {
@@ -61,6 +71,11 @@
         height: 2.5rem;
         width: 2.5rem;
         fill: $color-primary;
+
+        @include respond(600) {
+            height: 3rem;
+            width: 3rem;
+        }
     }
 
     &__link {
@@ -80,6 +95,14 @@
 
             span {
                 padding-left: 1rem;
+
+                @include respond(600) {
+                    display: none;
+                }
+            }
+
+            @include respond(900) {
+                font-size: 1.8rem;
             }
         }
        
@@ -108,6 +131,18 @@
     &__checkbox:checked ~ &__button {
         transform: translateY(-3.5rem);
         background: transparent;
+
+        @include respond(900) {
+            transform: translateY(-3.5rem) translateX(2.5rem);
+        }
+
+        @include respond(600) {
+            transform: translateY(-3.5rem) translateX(2rem);
+        }
+
+        @include respond(400) {
+            transform: translateY(-3rem) translateX(2rem);
+        }
     }
 
     // ICON
@@ -115,6 +150,14 @@
     &__icon {
         position: relative;
         top: 2.7rem;
+
+        @include respond(600) {
+            top: 2.2rem;
+        }
+
+        @include respond(400) {
+            top: 1.8rem;
+        }
         
         &,
         &::before,
@@ -123,6 +166,11 @@
             height: 3px;
             background-color: $color-grey-dark-3;
             display: inline-block;
+
+             @include respond(400) {
+                width: 2rem;
+                height: 2px;
+            }
         }
 
         &::before,
@@ -137,23 +185,33 @@
             top: -.7rem; 
             // this can tell where the animation center will be 
             // transform-origin: right;
-            }
+        }
 
-        &::after {top: .8rem;}
+        &::after {
+            top: .8rem;
+
+            @include respond(400) {
+                top: .7rem;
+            }
+        }
     }
 
     // to cause the lines to make some space between them
 
     &__button:hover &__icon::before {
         top: -1rem;
+
+        @include respond(400) {
+            top: -.8rem;
+        }
     }
 
     &__button:hover &__icon::after {
         top: 1rem;
-    }
 
-    &__button:hover &__icon{
-        
+        @include respond(400) {
+            top: .7rem;
+        }
     }
 
     // select the icon when the nav button clicked
