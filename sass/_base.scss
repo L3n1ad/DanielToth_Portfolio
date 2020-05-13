@@ -44,18 +44,17 @@ $bp-small: 37.5em; // 600px/16px
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1 rem = 10px --> 10px/16px= 62.5%
-
-    @media only screen and (max-width: $bp-largest) {
-        
-    }
 }
 
 body {
     font-family: $font-primary;
     color: $color-grey-light-1;
     font-weight: 300;
+
+    @include respond(big-desktop) {
+        max-width: 140rem;
+        margin: 0 auto;
+        background: $color-background;
+    }
 }
 
-section {
-    padding-top: 20rem;
-}

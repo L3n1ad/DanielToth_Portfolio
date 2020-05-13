@@ -1,6 +1,9 @@
+// mixins needs to be imported first
+@import "./mixins";
 @import "base";
 @import "typography";
 @import "navbar";
+
 
 @import "./navbar";
 @import "./home";
@@ -9,6 +12,7 @@
 @import "./skills";
 @import "./projects";
 @import "./contact";
+
 
 
 

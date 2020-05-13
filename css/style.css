@@ -1,3 +1,15 @@
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+600px = 37.5rem
+
+DOES INCLUDE _mixins
+*/
 *,
 *::before,
 *::after {
@@ -13,9 +25,11 @@ body {
   font-family: "Inconsolata", sans-serif;
   color: #E7EDED;
   font-weight: 300; }
-
-section {
-  padding-top: 20rem; }
+  @media only screen and (min-width: 87.5em) {
+    body {
+      max-width: 140rem;
+      margin: 0 auto;
+      background: #0a142f; } }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -526,23 +540,21 @@ section {
     align-self: center;
     text-align: left; }
   .skills__box {
-    text-align: right; }
+    text-align: right;
+    justify-self: end; }
     .skills__box-1 {
       grid-column: 4 / -1;
       grid-row: 2 / 3;
-      margin-left: 24rem; }
+      width: fit-content; }
     .skills__box-2 {
       grid-column: 4 / -1;
-      grid-row: 3 / 4;
-      margin-left: 15rem; }
+      grid-row: 3 / 4; }
     .skills__box-3 {
       grid-column: 4 / -1;
-      grid-row: 4 / 5;
-      margin-left: 24rem; }
+      grid-row: 4 / 5; }
     .skills__box-4 {
       grid-column: 1 / -1;
-      grid-row: 5 / 6;
-      margin-left: 39rem; }
+      grid-row: 5 / 6; }
   .skills__logo-container {
     background: #273d5a;
     margin: 2rem 0 2rem 3rem;
@@ -552,17 +564,16 @@ section {
     transition: all .2s;
     padding-right: auto;
     color: #E7EDED;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 10rem));
-    justify-content: center;
-    justify-items: center; }
+    display: flex;
+    justify-content: space-evenly; }
   .skills__logo-container:hover {
     transform: scale(1.03) translateY(-1rem);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.7); }
   .skills__logo {
     height: 3rem;
     width: auto;
-    text-align: center; }
+    text-align: center;
+    margin: 0 2rem; }
     .skills__logo h4 {
       text-align: center;
       font-size: 1.6rem; }
