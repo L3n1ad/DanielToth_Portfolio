@@ -24,29 +24,30 @@
 
     &__box{
         text-align: right;
+        justify-self: end;
 
         &-1{
             grid-column: 4 / -1;
             grid-row: 2 / 3;
-            margin-left: 24rem;
+            width: fit-content
         }
 
         &-2{
             grid-column: 4 / -1;
             grid-row: 3 / 4;
-            margin-left: 15rem;
+            // margin-left: 15vw;
         }
 
         &-3{
             grid-column: 4 / -1;
             grid-row: 4 / 5;
-            margin-left: 24rem;
+            // margin-left: 24vw;
         }
 
         &-4{
             grid-column: 1 / -1;
             grid-row: 5 / 6;
-            margin-left: 39rem;
+            // margin-left: 25%;
         }
 
      
@@ -64,10 +65,8 @@
         padding-right: auto;
         color: $color-grey-light-1;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min-content, 10rem));
-        justify-content: center;
-        justify-items: center;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     &__logo-container:hover {
@@ -79,6 +78,7 @@
         height: 3rem;
         width: auto;
         text-align: center;
+        margin: 0 2rem;
         
         h4 {
             text-align: center;
