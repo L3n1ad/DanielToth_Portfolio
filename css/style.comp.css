@@ -252,7 +252,7 @@ body {
       top: 2.2rem; } }
   @media only screen and (max-width: 25em) {
     .navigation__icon {
-      top: 1.8rem; } }
+      top: 2.3rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 3px;
@@ -420,7 +420,7 @@ body {
       top: 2.2rem; } }
   @media only screen and (max-width: 25em) {
     .navigation__icon {
-      top: 1.8rem; } }
+      top: 2.3rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 3px;
