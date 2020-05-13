@@ -23,50 +23,59 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="navbar__logo">
-            <img src="img/logo.jpg" alt="Logo">
-        </div>
-
-        <div class="navbar__items">
-
-            <a href="#home" class="navbar__link navbar__item">
-                <svg class="navbar__icon">
-                    <use xlink:href="img/sprite.svg#icon-home"></use>
-                </svg>
-                <span>Home</span>
-            </a>
-
-            <a href="#about" class="navbar__link navbar__item">
-                <svg class="navbar__icon">
-                    <use xlink:href="img/sprite.svg#icon-user-tie"></use>
-                </svg>
-                <span>About</span>
-            </a>
-
-            <a href="#skills" class="navbar__link navbar__item">
-                <svg class="navbar__icon">
-                    <use xlink:href="img/sprite.svg#icon-cogs"></use>
-                </svg>
-                <span>Skills</span>
-            </a>
-
-            <a href="#projects" class="navbar__link navbar__item">
-                <svg class="navbar__icon">
-                    <use xlink:href="img/sprite.svg#icon-eye"></use>
-                </svg>
-                <span>Projects</span>
-            </a>
-
-            <a href="#contact" class="navbar__link navbar__item">
-                <svg class="navbar__icon">
-                    <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-                <span>Contact</span>
-            </a>
- 
-        </div>
-    </nav>
+    <div class="navigation">
+    
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#home" class="navigation__link">
+                        <svg class="navigation__svg">
+                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">
+                        <svg class="navigation__svg">
+                            <use xlink:href="img/sprite.svg#icon-user-tie"></use>
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#skills" class="navigation__link">
+                        <svg class="navigation__svg">
+                            <use xlink:href="img/sprite.svg#icon-cogs"></use>
+                        </svg>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#projects" class="navigation__link">
+                        <svg class="navigation__svg">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link">
+                        <svg class="navigation__svg">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <section class="home" id="home">
 

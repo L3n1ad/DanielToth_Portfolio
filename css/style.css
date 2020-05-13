@@ -109,99 +109,249 @@ section {
   background-color: currentColor;
   text-shadow: 0rem 1orem 3rem black; }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  background: #0a142f; }
-  .navbar__logo {
-    padding: 1rem 2rem; }
-    .navbar__logo img {
-      height: 5rem;
-      border-radius: 50%; }
-  .navbar__items {
-    display: flex;
-    align-self: stretch; }
-    .navbar__items > * {
-      padding: 0 2rem;
-      cursor: pointer;
-      height: 100%; }
-  .navbar__item {
-    display: flex;
-    align-items: center; }
-  .navbar__link:hover,
-  .navbar__link:hover .navbar__icon {
-    fill: #dc4eff; }
-    .navbar__link:hover span,
-    .navbar__link:hover .navbar__icon span {
-      color: #dc4eff; }
-  .navbar__link:link, .navbar__link:visited {
-    text-decoration: none;
-    color: #3fe1fd;
-    font-size: 1.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center; }
-    .navbar__link:link span, .navbar__link:visited span {
-      padding-left: 1rem; }
-  .navbar__icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: #3fe1fd; }
+.navigation__checkbox {
+  display: none; }
 
-.navbar {
+.navigation__button {
+  background: #3fe1fd;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 4rem;
+  right: 4rem;
+  z-index: 200;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.83, 0, 0.17, 1); }
+
+.navigation__nav {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
   width: 100%;
+  padding: 3.5rem;
+  z-index: 10;
+  transition: all 1s ease-in;
+  transform: translateX(-50%);
+  background: #0a142f;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+
+.navigation__list {
+  position: absolute;
+  top: 1rem;
+  left: 0;
   display: flex;
+  justify-items: end;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+  font-size: 2.8rem;
+  list-style: none;
+  margin-left: 3rem; }
+
+.navigation__item {
+  margin: 1rem;
+  margin-right: 2rem; }
+
+.navigation__svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #3fe1fd; }
+
+.navigation__link:link, .navigation__link:visited {
+  transition: all 2s;
+  text-decoration: none;
+  color: #3fe1fd;
+  font-size: 2rem;
+  letter-spacing: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+  .navigation__link:link span, .navigation__link:visited span {
+    padding-left: 1rem; }
+
+.navigation__link:hover, .navigation__link:active,
+.navigation__link:hover .navigation__svg,
+.navigation__link:active .navigation__svg {
+  transition: all .3s;
+  fill: #dc4eff; }
+  .navigation__link:hover span, .navigation__link:active span,
+  .navigation__link:hover .navigation__svg span,
+  .navigation__link:active .navigation__svg span {
+    transition: all .3s;
+    color: #dc4eff; }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5); }
+
+.navigation__checkbox:checked ~ .navigation__button {
+  transform: translateY(-3.5rem);
+  background: transparent; }
+
+.navigation__icon {
+  position: relative;
+  top: 2.7rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: #1f1e1e;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.7rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+  background: #E7EDED; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+  background: #E7EDED; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background: #3fe1fd;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  z-index: 200;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.83, 0, 0.17, 1); }
+
+.navigation__nav {
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  padding: 3.5rem;
   z-index: 10;
-  background: #0a142f; }
-  .navbar__logo {
-    padding: 1rem 2rem; }
-    .navbar__logo img {
-      height: 5rem;
-      border-radius: 50%; }
-  .navbar__items {
-    display: flex;
-    align-self: stretch; }
-    .navbar__items > * {
-      padding: 0 2rem;
-      cursor: pointer;
-      height: 100%; }
-  .navbar__item {
-    display: flex;
-    align-items: center; }
-  .navbar__link:hover,
-  .navbar__link:hover .navbar__icon {
-    fill: #dc4eff; }
-    .navbar__link:hover span,
-    .navbar__link:hover .navbar__icon span {
-      color: #dc4eff; }
-  .navbar__link:link, .navbar__link:visited {
-    text-decoration: none;
-    color: #3fe1fd;
-    font-size: 1.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center; }
-    .navbar__link:link span, .navbar__link:visited span {
-      padding-left: 1rem; }
-  .navbar__icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: #3fe1fd; }
+  transition: all 1s ease-in;
+  transform: translateX(-50%);
+  background: #0a142f;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+
+.navigation__list {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  justify-items: end;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.8rem;
+  list-style: none;
+  margin-left: 3rem; }
+
+.navigation__item {
+  margin: 1rem;
+  margin-right: 2rem; }
+
+.navigation__svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #3fe1fd; }
+
+.navigation__link:link, .navigation__link:visited {
+  transition: all 2s;
+  text-decoration: none;
+  color: #3fe1fd;
+  font-size: 2rem;
+  letter-spacing: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; }
+  .navigation__link:link span, .navigation__link:visited span {
+    padding-left: 1rem; }
+
+.navigation__link:hover, .navigation__link:active,
+.navigation__link:hover .navigation__svg,
+.navigation__link:active .navigation__svg {
+  transition: all .3s;
+  fill: #dc4eff; }
+  .navigation__link:hover span, .navigation__link:active span,
+  .navigation__link:hover .navigation__svg span,
+  .navigation__link:active .navigation__svg span {
+    transition: all .3s;
+    color: #dc4eff; }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  transform: translateX(0);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5); }
+
+.navigation__checkbox:checked ~ .navigation__button {
+  transform: translateY(-3.5rem);
+  background: transparent; }
+
+.navigation__icon {
+  position: relative;
+  top: 2.7rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: #1f1e1e;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.7rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+  background: #E7EDED; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+  background: #E7EDED; }
 
 .home {
   padding: 30vh 5vw;
