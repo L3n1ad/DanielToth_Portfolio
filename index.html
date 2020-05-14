@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="shortcut icon" type="image/jpg" href="img/logo.jpg">
+
+    <!-- Animation on scroll import -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <title>Daniel Toth &mdash; Portfolio Website</title>
 </head>
@@ -27,7 +31,12 @@
     
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
     
-        <label for="navi-toggle" class="navigation__button">
+        <label for="navi-toggle" 
+            class="navigation__button" 
+            data-aos="slide-left"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-sine">
             <span class="navigation__icon">&nbsp;</span>
         </label>
     
@@ -79,7 +88,11 @@
 
     <section class="home" id="home">
 
-        <div class="home__content">
+        <div class="home__content"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out-quad">
             <div class="home__content__text">
                 <h2 class="home__content__text-header">
                     <div class="home__line">
@@ -133,9 +146,13 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" >
 
-        <div class="about__content mb-hg">
+        <div class="about__content mb-hg"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-sine">
             <div class="about__text">
                 <div class="textline-left header skills__header ">
                     <div>
@@ -171,7 +188,12 @@
 
     <section class="skills" id="skills">
 
-        <div class="header skills__header textline-right">
+        <div class="skills__content"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            data-aos-easing="ease-out-sine">
+            <div class="header skills__header textline-right">
                 <div>
                     <span class="text__animated">S</span>
                     <span class="text__animated">k</span>
@@ -180,166 +202,175 @@
                     <span class="text__animated">l</span>
                     <span class="text__animated">s</span>
                 </div>
-        </div>
-
-        <div class="skills__text">
-            <p class="skills__text-1">
-                Here are the key skills I have learned and the key projects: 
-               
-            </p>
-
-            <p class="skills__text-2">
-               
-                
-                <ul>
-                    <br>
-                    <li>
-                        A project with the charity, Paths For All, to develop their website and increase it's accessibility for users and admins.
-                    </li>
-                    <br>
-                    <li>
-                        Creating a blogsite for a friend using JavaScript / Node.js / Express.js which has user authentication, Google Maps, comment section and a MongoDB database.
-                    </li>
-                    <br>
-                    <li>
-                        My first game development, a browser based Top Trumps game using JavaScript / Vue.js / Node.js and PostgreSQL databse.
-                    </li>
-                </ul>
-            </p>
-        </div>
-
-        <div class="skills__box skills__box-1">
-            <h1 class="mb-sm skills__box-header">HTML/CSS</h1>
-            <div class="skills__logo-container">
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/html.svg" alt="HTML logo">
-                    <h4>HTML 5</h4>
+            </div>
+            
+            <div class="skills__text">
+                <p class="skills__text-1">
+                    Here are the key skills I have learned and the key projects:
+            
+                </p>
+            
+                <p class="skills__text-2">
+            
+            
+                    <ul>
+                        <br>
+                        <li>
+                            A project with the charity, Paths For All, to develop their website and increase it's accessibility for
+                            users and admins.
+                        </li>
+                        <br>
+                        <li>
+                            Creating a blogsite for a friend using JavaScript / Node.js / Express.js which has user authentication,
+                            Google Maps, comment section and a MongoDB database.
+                        </li>
+                        <br>
+                        <li>
+                            My first game development, a browser based Top Trumps game using JavaScript / Vue.js / Node.js and
+                            PostgreSQL databse.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="skills__box skills__box-1">
+                <h1 class="mb-sm skills__box-header">HTML/CSS</h1>
+                <div class="skills__logo-container">
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/html.svg" alt="HTML logo">
+                        <h4>HTML 5</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/css.svg" alt="HTML logo">
+                        <h4>CSS</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/saas.svg" alt="HTML logo">
+                        <h4>SASS</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/bootstrap.png" alt="HTML logo">
+                        <h4>Bootstrap</h4>
+                    </div>
+            
                 </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/css.svg" alt="HTML logo">
-                    <h4>CSS</h4>
+            </div>
+            
+            <div class="skills__box skills__box-2">
+                <h1 class="mb-sm">Javascript</h1>
+                <div class="skills__logo-container">
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/javascript.svg" alt="HTML logo">
+                        <h4>JavaScript</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/nodejs.svg" alt="HTML logo">
+                        <h4>Node.js</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/react.svg" alt="HTML logo">
+                        <h4>React</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/vue.svg" alt="HTML logo">
+                        <h4>Vue.js</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/jquery.png" alt="HTML logo">
+                        <h4>JQuery</h4>
+                    </div>
+            
                 </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/saas.svg" alt="HTML logo">
-                    <h4>SASS</h4>
+            </div>
+            
+            <div class="skills__box skills__box-3">
+                <h1 class="mb-sm">Java / Ruby</h1>
+                <div class="skills__logo-container">
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/java.svg" alt="HTML logo">
+                        <h4>Java</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/spring.png" alt="HTML logo">
+                        <h4>Spring</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/ruby.svg" alt="HTML logo">
+                        <h4>Ruby</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/sinatra.png" alt="HTML logo">
+                        <h4>Sinatra</h4>
+                    </div>
+            
                 </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/bootstrap.png" alt="HTML logo">
-                    <h4>Bootstrap</h4>
+            </div>
+            
+            <div class="skills__box skills__box-4">
+                <h1 class="mb-sm">Databases / Other</h1>
+                <div class="skills__logo-container">
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/mongodb2.svg" alt="HTML logo">
+                        <h4>MongoDB</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/postgresql.svg" alt="HTML logo">
+                        <h4>PostgreSQL</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/minitest.png" alt="HTML logo">
+                        <h4>MiniTest</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/mocha.svg" alt="HTML logo">
+                        <h4>Mocha</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/heroku (1).svg" alt="HTML logo">
+                        <h4>Heroku</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/github.svg" alt="HTML logo">
+                        <h4>GitHub</h4>
+                    </div>
+            
+                    <div class="skills__logo">
+                        <img class="skills__logo" src="img/firebase.svg" alt="HTML logo">
+                        <h4>Firebase</h4>
+                    </div>
+            
                 </div>
-        
             </div>
         </div>
         
-        <div class="skills__box skills__box-2">
-            <h1 class="mb-sm">Javascript</h1>
-            <div class="skills__logo-container">
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/javascript.svg" alt="HTML logo">
-                    <h4>JavaScript</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/nodejs.svg" alt="HTML logo">
-                    <h4>Node.js</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/react.svg" alt="HTML logo">
-                    <h4>React</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/vue.svg" alt="HTML logo">
-                    <h4>Vue.js</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/jquery.png" alt="HTML logo">
-                    <h4>JQuery</h4>
-                </div>
-        
-            </div>
-        </div>
-        
-        <div class="skills__box skills__box-3">
-            <h1 class="mb-sm">Java / Ruby</h1>
-            <div class="skills__logo-container">
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/java.svg" alt="HTML logo">
-                    <h4>Java</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/spring.png" alt="HTML logo">
-                    <h4>Spring</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/ruby.svg" alt="HTML logo">
-                    <h4>Ruby</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/sinatra.png" alt="HTML logo">
-                    <h4>Sinatra</h4>
-                </div>
-        
-            </div>
-        </div>
-        
-        <div class="skills__box skills__box-4">
-            <h1 class="mb-sm">Databases / Other</h1>
-            <div class="skills__logo-container">
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/mongodb2.svg" alt="HTML logo">
-                    <h4>MongoDB</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/postgresql.svg" alt="HTML logo">
-                    <h4>PostgreSQL</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/minitest.png" alt="HTML logo">
-                    <h4>MiniTest</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/mocha.svg" alt="HTML logo">
-                    <h4>Mocha</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/heroku (1).svg" alt="HTML logo">
-                    <h4>Heroku</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/github.svg" alt="HTML logo">
-                    <h4>GitHub</h4>
-                </div>
-        
-                <div class="skills__logo">
-                    <img class="skills__logo" src="img/firebase.svg" alt="HTML logo">
-                    <h4>Firebase</h4>
-                </div>
-        
-            </div>
-        </div>
     </section>
 
     <section class="projects" id="projects">
 
-            <div class="header skills__header textline-both">
+            <div class="header skills__header textline-both"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <div>
                     <span class="text__animated text__animated-header">P</span>
                     <span class="text__animated text__animated-header">R</span>
@@ -354,7 +385,11 @@
 
         <div class="projects__gallery">
 
-            <div class="projects__gallery__item projects__gallery__item-2">
+            <div class="projects__gallery__item projects__gallery__item-2"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/blogApp.png" alt="Blog App picture" class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / Node.js</h2>
@@ -365,7 +400,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item">
+            <div class="projects__gallery__item"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/yelpcamp.png" alt="YelpCamp website picture"class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / Node.js</h2>
@@ -378,7 +417,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item">
+            <div class="projects__gallery__item"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/colorPickingGame.jpg" alt="Color Picking Game screenshot" class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / CSS</h2>
@@ -390,7 +433,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-patatap">
+            <div class="projects__gallery__item"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/patatapClone.jpg" alt="Patatap Clone screenshot" class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / Canvas</h2>
@@ -403,7 +450,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-4">
+            <div class="projects__gallery__item projects__gallery__item-4"
+                data-aos="fade-up-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/Outdoors.jpg" alt="Outdoors project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>CSS / SASS</h2>
@@ -418,7 +469,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-6">
+            <div class="projects__gallery__item projects__gallery__item-6"
+                data-aos="fade-down-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/Nexter.jpg" alt="Nexter Project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>CSS / SASS</h2>
@@ -432,7 +487,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-5">
+            <div class="projects__gallery__item projects__gallery__item-5"
+                data-aos="fade-down-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/Trillo.jpg" alt="Trillo Project screenshot"   class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>CSS / SASS</h2>
@@ -446,7 +505,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-3">
+            <div class="projects__gallery__item projects__gallery__item-3"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/SuperTrumps.jpg" alt="SuperTrumps Project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / Node.js / Vue.js</h2>
@@ -458,7 +521,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item">
+            <div class="projects__gallery__item"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/Cryptocurrency.jpg" alt="crypto currency project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>JavaScript / Vue.js</h2>
@@ -471,7 +538,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item">
+            <div class="projects__gallery__item"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/RestaurantBooking.jpg" alt="restaurant project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>Java / React </h2>
@@ -485,7 +556,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item">
+            <div class="projects__gallery__item"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/energyTracker.png" alt="energy tracker project screenshot"  class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>Java / React </h2>
@@ -497,7 +572,11 @@
                 </div>
             </div>
 
-            <div class="projects__gallery__item projects__gallery__item-1">
+            <div class="projects__gallery__item projects__gallery__item-1"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <img src="img/pathsforall.jpg" alt="Paths For All project screenshot" class="projects__gallery__item-img">
                 <div class="projects__gallery__item-overlay">
                     <h2>Firebase / React / JavaScript</h2>
@@ -526,21 +605,33 @@
         </div>
 
         <div class="contact__container">
-            <div class="contact__item">
+            <div class="contact__item"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <a href="https://github.com/L3n1ad" class="contact__item-link" target="_blank">
                     <img class="skills__logo" src="img/github.svg" alt="GitHub logo">
                 </a>
                 <span class="contact__item-title">GitHub</span>
             </div>
             
-            <div class="contact__item">
+            <div class="contact__item"
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <a href="https://www.linkedin.com/in/danieltoth0910/" class="contact__item-link" target="_blank">
                     <img class="skills__logo" src="img/linkedin.svg" alt="LinkedIn logo">
                 </a>
                 <span class="contact__item-title">LinkedIn</span>
             </div>
             
-            <div class="contact__item">
+            <div class="contact__item"
+                data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-out-sine">
                 <div class="contact__item-link tooltip" onclick="copy_function()" onmouseout="outFunc()">
                     <img class="skills__logo" src="img/mail.svg" alt="Email logo">
                     <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
@@ -554,6 +645,8 @@
 
 
     <script>
+        AOS.init();
+
         const letters = document.getElementsByClassName('text__animated');
         console.log(letters)
 

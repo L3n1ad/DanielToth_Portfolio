@@ -714,17 +714,18 @@ body {
 
 .skills {
   background: #0a142f;
-  padding: 13rem 5rem 0 5rem;
-  display: grid;
-  grid-template-columns: repeat(8, minmax(10rem, 1fr));
-  grid-gap: 2rem 0; }
-  @media only screen and (max-width: 56.25em) {
-    .skills {
-      grid-template-columns: repeat(4, minmax(10rem, 1fr)); } }
-  @media only screen and (max-width: 37.5em) {
-    .skills {
-      grid-template-columns: repeat(2, minmax(10rem, 1fr));
-      grid-auto-rows: fit-content; } }
+  padding: 13rem 5rem 0 5rem; }
+  .skills__content {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(10rem, 1fr));
+    grid-gap: 2rem 0; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__content {
+        grid-template-columns: repeat(4, minmax(10rem, 1fr)); } }
+    @media only screen and (max-width: 37.5em) {
+      .skills__content {
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        grid-auto-rows: fit-content; } }
   .skills__header {
     font-size: 3rem;
     font-weight: 300 !important;
