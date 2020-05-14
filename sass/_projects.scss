@@ -2,6 +2,10 @@
     background: $color-background;
     padding: 14rem 3rem 0 3rem;
 
+    // @include respond(900) {
+    //     padding: 0 10rem 0 10rem;
+    // }
+
     &__gallery{
         margin-top: 10rem;
         padding: 3rem 5rem;

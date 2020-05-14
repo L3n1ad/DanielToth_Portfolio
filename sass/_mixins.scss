@@ -44,6 +44,11 @@ DOES INCLUDE _mixins
         // 600px
     }
 
+    @if  $breakpoint == 750 {
+        @media only screen and  (max-width: 46.875em) {@content}; 
+        // 600px
+    }
+
     @if  $breakpoint == 900 {
         @media only screen and  (max-width: 56.25em) {@content}; // 900px
     }
