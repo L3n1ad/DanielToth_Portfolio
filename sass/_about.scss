@@ -7,6 +7,10 @@
         height: auto;
     }
 
+    @media only screen and  (max-height: 37.5em) {
+        padding: 10rem 4rem;
+    }
+
     &__content{
     //     margin: 2rem 2rem;
         padding: 2rem 3rem;

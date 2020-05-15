@@ -647,6 +647,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .about {
       height: auto; } }
+  @media only screen and (max-height: 37.5em) {
+    .about {
+      padding: 10rem 4rem; } }
   .about__content {
     padding: 2rem 3rem;
     display: grid;
@@ -719,6 +722,12 @@ body {
   @media only screen and (max-width: 65.625em) {
     .skills {
       padding: 0 7rem 0 7rem; } }
+  @media only screen and (max-height: 37.5em) {
+    .skills {
+      padding: 13rem 5rem 0 5rem; } }
+  @media only screen and (max-height: 25em) {
+    .skills {
+      padding: 26rem 5rem 0 5rem; } }
   .skills__content {
     display: grid;
     grid-template-columns: repeat(8, minmax(10rem, 1fr));
